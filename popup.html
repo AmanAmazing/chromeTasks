@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Task Tracker</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<h1>Task Tracker</h1>
+	<button id="addTaskBtn">Add Task</button>
+	<div id="addTaskForm" style="display: none;">
+		<input type="text" id="taskNameInput" placeholder="Enter task name">
+		<input type="text" id="taskDescriptionInput" placeholder="Enter task description">
+		<input type="text" id="taskUrlInput" placeholder="Enter task URL">
+		<select id="taskStatusInput">
+			<option value="initial">Initial</option>
+			<option value="pending">Pending</option>
+			<option value="completed">Completed</option>
+		</select>
+		<button id="saveTaskBtn">Save Task</button>
+		<button id="cancelTaskBtn">Cancel</button>
+	</div>
+	<ul id="taskList"></ul>
+	<button id="toggleCompletedBtn">Show Completed Tasks</button>
+	<ul id="completedTasksList"></ul>
+	<script src="popup.js"></script>
+</body>
+
+</html>

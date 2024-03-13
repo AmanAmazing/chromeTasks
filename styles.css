@@ -1,0 +1,148 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 20px;
+	background-color: #282a36;
+	min-width: 400px;
+	text-align: center;
+	color: #f8f8f2;
+}
+
+h1 {
+	color: #ff79c6;
+	margin-bottom: 20px;
+}
+
+input[type="text"],
+select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #44475a;
+	border-radius: 4px;
+	box-sizing: border-box;
+	text-align: center;
+	background-color: #44475a;
+	color: #f8f8f2;
+}
+
+#taskNameInput,
+#taskDescriptionInput {
+	height: 38px;
+}
+
+button {
+	padding: 10px 20px;
+	background-color: #6272a4;
+	color: #f8f8f2;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #8be9fd;
+	color: #282a36;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
+	padding: 15px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+li button {
+	margin-top: 10px;
+}
+
+#addTaskForm {
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #44475a;
+	border-radius: 4px;
+}
+
+#addTaskForm input[type="text"],
+#addTaskForm select {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 8px;
+	border: 1px solid #6272a4;
+	border-radius: 4px;
+	box-sizing: border-box;
+	text-align: center;
+	background-color: #282a36;
+	color: #f8f8f2;
+}
+
+#addTaskForm button {
+	margin-right: 5px;
+}
+
+#toggleCompletedBtn {
+	margin-top: 20px;
+	padding: 10px 20px;
+	background-color: #ff5555;
+	color: #f8f8f2;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#toggleCompletedBtn:hover {
+	background-color: #ff79c6;
+}
+
+#completedTasksList {
+	display: none;
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+#taskStatusInput {
+	text-align-last: center;
+}
+
+/* Task background colors based on status */
+li[data-status="initial"] {
+	background-color: #44475a;
+}
+
+li[data-status="pending"] {
+	background-color: #6272a4;
+}
+
+li[data-status="completed"] {
+	background-color: #50fa7b;
+	color: #282a36;
+	padding: 15px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+li[data-status="completed"] a {
+	color: #282a36;
+	text-decoration: none;
+	word-break: break-all;
+}
+
+li[data-status="completed"] a:hover {
+	text-decoration: underline;
+}
+
+a {
+	color: #8be9fd;
+}
+
+a:hover {
+	color: #ff79c6;
+}
